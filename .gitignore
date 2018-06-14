@@ -66,3 +66,6 @@ lastupdate.tmp
 glod
 .DS_Store
 tags
+
+!cmd/glod/cmd/*.go
+!cmd/glod/cmd/glod.go
