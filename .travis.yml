@@ -12,11 +12,11 @@ before_install:
   - go get golang.org/x/tools/cmd/cover
 
 script:
-  - go test -v -cover -race ./...
-  - sudo GOROOT=$GOROOT GOPATH=$GOPATH $(which go) test -v -covermode=count -coverprofile=coverage.out .
+  - go test -v -cover -race ./pkg/...
+  - sudo GOROOT=$GOROOT GOPATH=$GOPATH $(which go) test -v -covermode=count -coverprofile=coverage.out ./pkg
   - goveralls -coverprofile=coverage.out -service travis-ci -repotoken $REPO_TOKEN
 
-notifications:
-  email:
-    - dev@dwarvesf.com
-  slack: dwarvesf:OXl7kgVI7pAkbEkolW46eNmi
+#notifications:
+  #email:
+  #  - dev@dwarvesf.com
+  #slack: dwarvesf:OXl7kgVI7pAkbEkolW46eNmi

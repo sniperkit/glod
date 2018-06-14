@@ -7,9 +7,15 @@ vendor/
 vendor/*
 vendor/**
 
-gofeed
+glod
 
-cmd/gofeed/gofeed*
+cmd/glod/glod*
+
+_examples/simple/glod*
+_examples/simple/simple*
+
+_examples/advanced/glod*
+_examples/advanced/advanced*
 
 bin
 bin/
@@ -34,6 +40,11 @@ _test
 *.[568vq]
 [568vq].out
 
+*.out
+
+.env
+.secret*
+
 *.cgo1.go
 *.cgo2.c
 _cgo_defun.c
@@ -47,3 +58,11 @@ _testmain.go
 *.prof
 
 .DS_STORE
+
+*.exe
+*.test
+*.prof
+lastupdate.tmp
+glod
+.DS_Store
+tags

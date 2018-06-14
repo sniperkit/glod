@@ -1,6 +1,6 @@
 # glod-cli
 
-**glod-cli** is a small command line tool that using [glod](https://github.com/dwarvesf/glod) to download music/video from multiple sources.
+**glod-cli** is a small command line tool that using [glod](https://https://github.com/sniperkit/glod/pkg) to download music/video from multiple sources.
 
 glod-cli is written in [Go](http://golang.org/) with support for multiple platforms. We currently provide pre-built binaries for Windows, Linux, FreeBSD and  OS X (Darwin) for x64, i386 and ARM architectures.
 
@@ -14,7 +14,7 @@ glod-cli may also be compiled from source wherever the Go compiler tool chain ca
 
 If you want to use glod-cli, simply install the glod-cli binaries. The glod-cli binaries have no external dependencies.
 
-Installation is very easy. Simply download the appropriate version for your platform from [glod-cli Releases](https://github.com/dwarvesf/glod-cli/releases). Once downloaded it can be run from anywhere. You don’t need to install it into a global location. This works well for shared hosts and other systems where you don’t have a privileged account.
+Installation is very easy. Simply download the appropriate version for your platform from [glod-cli Releases](https://https://github.com/sniperkit/glod/pkg-cli/releases). Once downloaded it can be run from anywhere. You don’t need to install it into a global location. This works well for shared hosts and other systems where you don’t have a privileged account.
 
 Ideally, you should download and put it somewhere in your `$PATH` for easy use. `/usr/local/bin` is the most probable location.
 
@@ -32,7 +32,7 @@ $ brew install glod-cli
 Add glod-cli and its package dependencies to your go src directory.
 
 ```
-go get -v github.com/dwarvesf/glod-cli
+go get -v https://github.com/sniperkit/glod/pkg-cli
 ```
 
 Once the get completes, you should find your new `glod-cli` (or `glod-cli.exe`) executable sitting inside `$GOPATH/bin/`.
@@ -40,7 +40,7 @@ Once the get completes, you should find your new `glod-cli` (or `glod-cli.exe`) 
 To update glod-cli dependencies, use `go get` with the `-u` option.
 
 ```
-go get -u -v github.com/dwarvesf/glod-cli
+go get -u -v https://github.com/sniperkit/glod/pkg-cli
 ```
 
 ### Upgrading

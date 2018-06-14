@@ -1,6 +1,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/dwarvesf/glod/badge.svg?branch=develop)](https://coveralls.io/github/dwarvesf/glod?branch=develop)
 
-[![GoDoc](https://godoc.org/github.com/dwarvesf/glod?status.svg)](https://godoc.org/github.com/dwarvesf/glod)
+[![GoDoc](https://godoc.org/https://github.com/sniperkit/glod/pkg?status.svg)](https://godoc.org/https://github.com/sniperkit/glod/pkg)
 [![Build Status](https://travis-ci.org/dwarvesf/glod.svg?branch=master)](https://travis-ci.org/dwarvesf/glod)
 [![Code Climate](https://codeclimate.com/github/dwarvesf/glod/badges/gpa.svg)](https://codeclimate.com/github/dwarvesf/glod)
 [![Test Coverage](https://codeclimate.com/github/dwarvesf/glod/badges/coverage.svg)](https://codeclimate.com/github/dwarvesf/glod/cov000erage)
@@ -18,7 +18,7 @@ If you are building your music streaming website, the command line tool to downl
 Assume that you had Go installed
   
 ```
-$ go get -u github.com/dwarvesf/glod
+$ go get -u https://github.com/sniperkit/glod/pkg
 ```
 
 # Usage:
@@ -55,7 +55,7 @@ listStream, error := glod.GetDirectLink(url)
 
 # Implementation
 
-We have created an command-line tool that implements glod. Check it out [glod-cli](https://github.com/dwarvesf/glod-cli)!
+We have created an command-line tool that implements glod. Check it out [glod-cli](https://https://github.com/sniperkit/glod/pkg-cli)!
 
 # Contributing
 

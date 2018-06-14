@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/dwarvesf/glod"
+	glod "https://github.com/sniperkit/glod/pkg"
 )
 
 // Soundcloud const
@@ -36,7 +36,7 @@ type SoundCloud struct {
 
 // GetDirectLink input is a link then return an object contains download url, song title and artist
 func (s *SoundCloud) GetDirectLink(link string) ([]glod.Response, error) {
-	var listSong []glod.Response
+	var list []glod.Response
 	var song glod.Response
 	var linkRequest = APILink + "url=" + link + "&client_id=" + ClientID
 
@@ -50,7 +50,7 @@ func (s *SoundCloud) GetDirectLink(link string) ([]glod.Response, error) {
 	// server forbidden, get song title only
 	if response.StatusCode == 403 {
 		song.Title = crawlTitleFromURL(link)
-		listSong = append(listSong, song)
+		list = append(list, song)
 	} else {
 
 		buffer, _ := ioutil.ReadAll(response.Body)
@@ -69,7 +69,7 @@ func (s *SoundCloud) GetDirectLink(link string) ([]glod.Response, error) {
 
 			song.StreamURL = url
 			song.Title = res.Title
-			listSong = append(listSong, song)
+			list = append(list, song)
 
 		} else if len(strings.Split(link, "/")) == urlPlaylist {
 			for i := range res.TrackList {
@@ -78,7 +78,7 @@ func (s *SoundCloud) GetDirectLink(link string) ([]glod.Response, error) {
 
 					song.StreamURL = url
 					song.Title = res.TrackList[i].Title
-					listSong = append(listSong, song)
+					list = append(list, song)
 					if strings.Contains(song.Title, "-") {
 						tmp := strings.Split(song.Title, "-")
 
@@ -91,7 +91,7 @@ func (s *SoundCloud) GetDirectLink(link string) ([]glod.Response, error) {
 			return nil, errors.New("Wrong Format Link")
 		}
 	}
-	return listSong, nil
+	return list, nil
 }
 
 // crawlTitleFromURL return a song title from given url
