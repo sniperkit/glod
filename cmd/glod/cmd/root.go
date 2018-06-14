@@ -10,14 +10,7 @@ import (
 )
 
 const (
-	initNhacCuaTui string = "nhaccuatui"
-	initZingMp3    string = "zing"
-	initYoutube    string = "youtube"
-	initSoundCloud string = "soundcloud"
-	initChiaSeNhac string = "chiasenhac"
-	initFacebook   string = "facebook"
-	initVimeo      string = "vimeo"
-	PlayDir        string = "glod"
+	PlayDir string = "glod"
 )
 
 // Flag descriptions

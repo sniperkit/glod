@@ -7,16 +7,29 @@ import (
 	glod "github.com/sniperkit/glod/pkg"
 
 	// internal - plugins
-	"github.com/sniperkit/glod/pkg/plugin/provider/chiasenhac"  // TODO: code chiesenhac
-	"github.com/sniperkit/glod/pkg/plugin/provider/daylimotion" // TODO: code dailymotion
-	"github.com/sniperkit/glod/pkg/plugin/provider/facebook"    // TODO: code dailymotion
-	"github.com/sniperkit/glod/pkg/plugin/provider/instagram"   // TODO: code dailymotion
-	"github.com/sniperkit/glod/pkg/plugin/provider/nhaccuatui"  // TODO: code nhaccuatui
-	"github.com/sniperkit/glod/pkg/plugin/provider/soundcloud"  // TODO: code soundcloud
-	"github.com/sniperkit/glod/pkg/plugin/provider/twitter"     // TODO: code dailymotion
-	"github.com/sniperkit/glod/pkg/plugin/provider/vimeo"       // TODO: code vimeo
-	"github.com/sniperkit/glod/pkg/plugin/provider/youtube"     // TODO: code dailymotion
-	"github.com/sniperkit/glod/pkg/plugin/provider/zing"        // TODO: code dailymotion
+	"github.com/sniperkit/glod/plugin/provider/chiasenhac"  // TODO: `code` chiesenhac
+	"github.com/sniperkit/glod/plugin/provider/dailymotion" // TODO: `code` dailymotion
+	"github.com/sniperkit/glod/plugin/provider/facebook"    // TODO: `code` facebook
+	"github.com/sniperkit/glod/plugin/provider/instagram"   // TODO: `code` instagram
+	"github.com/sniperkit/glod/plugin/provider/nhaccuatui"  // TODO: `code` nhaccuatui
+	"github.com/sniperkit/glod/plugin/provider/soundcloud"  // TODO: `code` soundcloud
+	"github.com/sniperkit/glod/plugin/provider/twitter"     // TODO: `code` twitter
+	"github.com/sniperkit/glod/plugin/provider/vimeo"       // TODO: `code` vimeo
+	"github.com/sniperkit/glod/plugin/provider/youtube"     // TODO: `test` dailymotion
+	"github.com/sniperkit/glod/plugin/provider/zing"        // TODO: `test` zing
+)
+
+const (
+	initFacebook    string = "facebook"
+	initInstagram   string = "instagram"
+	initTwitter     string = "twitter"
+	initYoutube     string = "youtube"
+	initDailymotion string = "dailymotion"
+	initVimeo       string = "vimeo"
+	initSoundCloud  string = "soundcloud"
+	initChiaSeNhac  string = "chiasenhac"
+	initNhacCuaTui  string = "nhaccuatui"
+	initZingMp3     string = "zing"
 )
 
 func getGlod(link string) glod.Source {
