@@ -7,6 +7,7 @@ vendor/
 vendor/*
 vendor/**
 
+_examples
 
 cmd/glod/glod
 
