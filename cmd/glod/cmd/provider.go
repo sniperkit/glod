@@ -7,16 +7,16 @@ import (
 	glod "github.com/sniperkit/glod/pkg"
 
 	// internal - plugins
-	"github.com/sniperkit/glod/pkg/plugin/provider/chiasenhac"
-	"github.com/sniperkit/glod/pkg/plugin/provider/daylimotion"
-	"github.com/sniperkit/glod/pkg/plugin/provider/facebook"
-	"github.com/sniperkit/glod/pkg/plugin/provider/instagram"
-	"github.com/sniperkit/glod/pkg/plugin/provider/nhaccuatui"
-	"github.com/sniperkit/glod/pkg/plugin/provider/soundcloud"
-	"github.com/sniperkit/glod/pkg/plugin/provider/twitter"
-	"github.com/sniperkit/glod/pkg/plugin/provider/vimeo"
-	"github.com/sniperkit/glod/pkg/plugin/provider/youtube"
-	"github.com/sniperkit/glod/pkg/plugin/provider/zing"
+	"github.com/sniperkit/glod/pkg/plugin/provider/chiasenhac"  // TODO: code chiesenhac
+	"github.com/sniperkit/glod/pkg/plugin/provider/daylimotion" // TODO: code dailymotion
+	"github.com/sniperkit/glod/pkg/plugin/provider/facebook"    // TODO: code dailymotion
+	"github.com/sniperkit/glod/pkg/plugin/provider/instagram"   // TODO: code dailymotion
+	"github.com/sniperkit/glod/pkg/plugin/provider/nhaccuatui"  // TODO: code nhaccuatui
+	"github.com/sniperkit/glod/pkg/plugin/provider/soundcloud"  // TODO: code soundcloud
+	"github.com/sniperkit/glod/pkg/plugin/provider/twitter"     // TODO: code dailymotion
+	"github.com/sniperkit/glod/pkg/plugin/provider/vimeo"       // TODO: code vimeo
+	"github.com/sniperkit/glod/pkg/plugin/provider/youtube"     // TODO: code dailymotion
+	"github.com/sniperkit/glod/pkg/plugin/provider/zing"        // TODO: code dailymotion
 )
 
 func getGlod(link string) glod.Source {

@@ -17,7 +17,7 @@ const (
 type ChiaSeNhac struct {
 }
 
-// TODO: test chiesenhac
+// TODO: code chiesenhac
 func (csn *ChiaSeNhac) GetDirectLink(link string) ([]glod.Response, error) {
 	var list []glod.Response
 	return list, nil
