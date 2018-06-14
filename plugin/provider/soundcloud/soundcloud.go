@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	glod "https://github.com/sniperkit/glod/pkg"
+	glod "github.com/sniperkit/glod/pkg"
 )
 
 // Soundcloud const

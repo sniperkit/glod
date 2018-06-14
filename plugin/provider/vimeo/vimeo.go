@@ -1,7 +1,7 @@
 package vimeo
 
 import (
-	glod "https://github.com/sniperkit/glod/pkg"
+	glod "github.com/sniperkit/glod/pkg"
 )
 
 type Vimeo struct {

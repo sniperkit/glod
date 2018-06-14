@@ -1,7 +1,7 @@
 package facebook
 
 import (
-	glod "https://github.com/sniperkit/glod/pkg"
+	glod "github.com/sniperkit/glod/pkg"
 )
 
 type Dailymotion struct {

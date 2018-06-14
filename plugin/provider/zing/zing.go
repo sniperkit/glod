@@ -11,7 +11,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 
 	// internal
-	glod "https://github.com/sniperkit/glod/pkg"
+	glod "github.com/sniperkit/glod/pkg"
 )
 
 const (
@@ -87,7 +87,7 @@ func GetMedias(listLink []string) []glod.Response {
 	var song glod.Response
 	var zingResponse ZingResponse
 
-	for i, _ := range listLink {
+	for i := range listLink {
 		id := GetMediaID(listLink[i])
 		link := linkDownloadSong + "{\"id\":\"" + id + "\"}"
 

@@ -13,8 +13,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 
 	// internal
-	glod "https://github.com/sniperkit/glod/pkg"
-
+	glod "github.com/sniperkit/glod/pkg"
 )
 
 // YoutubePrefix ...
@@ -200,7 +199,7 @@ func (youtube *Youtube) GetDirectLink(link string) ([]glod.Response, error) {
 	}
 
 	_videoID := urlList[3]
-	videoID := _videoID[8:len(_videoID)]
+	videoID := _videoID[8:]
 	song, err := DownloadSingleVideo(videoID)
 	if err != nil {
 
